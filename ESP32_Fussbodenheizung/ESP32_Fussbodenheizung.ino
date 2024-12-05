@@ -115,7 +115,7 @@ void loop()
       delay(500); // Zusätzliche Verzögerung, um sicherzustellen, dass alle Nachrichten gesendet wurden
 
       // In den Deep Sleep Modus für 5 Minuten gehen
-      unsigned long sleepDuration = 10 * 1000000; // 10s in Mikrosekunden
+      unsigned long sleepDuration = 5 * 60 * 1000000; // 5min in Mikrosekunden
       esp_sleep_enable_timer_wakeup(sleepDuration);
       esp_deep_sleep_start();
     }
